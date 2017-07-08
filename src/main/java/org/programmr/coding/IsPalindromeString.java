@@ -9,25 +9,33 @@ package org.programmr.coding;
 
 public class IsPalindromeString {
 	
-	  public boolean isPalindromeStringReverse(String str) {
+	  public boolean isPalindromeString01(String str) {
       String original = str;
       String reverse = "";
       boolean result;
-      
-   //   Scanner in = new Scanner(System.in);
- 
+   //   Scanner in = new Scanner(System.in); 
    //   System.out.println("Enter a string to check if it is a palindrome");
-    //  original = in.nextLine();
- 
+   //   original = in.nextLine();
       int length = original.length();
  
       for (int i = length-1; i >= 0; i--)
          reverse = reverse + original.charAt(i);
- 
+
       return result = original.equals(reverse);
 	  }
 	  
-	  public boolean isPalindromeStringHalf(String str) {
+	  public boolean isPalindromeString02(String str) {
+		  String original = str;
+		  boolean result;
+		//  Scanner in = new Scanner(System.in);
+		//  System.out.println("Enter a string to check if it is a palindrome");
+		//  original = in.nextLine();
+		  StringBuffer reverse = new StringBuffer(original).reverse();
+		  
+		  return result = original.equals(reverse.toString());
+	  }
+	  
+	  public boolean isPalindromeString03(String str) {
 		  String input = str;
 		 // Scanner scanner = new Scanner(System.in);
 		 // input = scanner.nextLine();
