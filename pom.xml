@@ -50,9 +50,9 @@
                         <!--
                                             <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
                         -->
-                 <!-- 
-                        <suiteXmlFile>/resources/testng.xml</suiteXmlFile>
-                     -->
+                  
+                        <suiteXmlFile>src/test/java/resources/testng.xml</suiteXmlFile>
+                     
                      
                      <!--     
                         <suiteXmlFile>/DS/src/main/resources/testng.xml</suiteXmlFile>
@@ -123,9 +123,9 @@
                         </goals>
                         <configuration>
                             <testFailureIgnore>true</testFailureIgnore>
-                            <!--
+                            
                                                     <argLine>${surefireArgLine}</argLine>
-                            -->
+                           
                         </configuration>
                     </execution>
                 </executions>
@@ -175,9 +175,9 @@
                 <artifactId>maven-pmd-plugin</artifactId>
                 <version>3.8</version>
                 <configuration>
-                    <!--
+                    
                                               <linkXref>true</linkXref>
-                    -->
+                   
                     <sourceEncoding>utf-8</sourceEncoding>
                     <skipEmptyReport>false</skipEmptyReport>
                     <minimumTokens>100</minimumTokens>
