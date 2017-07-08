@@ -82,7 +82,7 @@
                     <properties>
                         <property>
                             <name>testnames</name>
-                            <value>CollectionMapTest</value>
+                            <value>CodingChallenge</value>
                         </property>
                     </properties>
                 </configuration>
