@@ -1,5 +1,5 @@
 node {
-// git "https://github.com/TonyYuta/CodingChallengeProgrammer.git"
+// git "https://github.com/TonyYuta/CodingChallengeProgrammr.git"
 git "https://github.com/TonyYuta/" + repo + ".git"
 def mvnHome = tool 'Maven_3.5.0'
 // sh "'${mvnHome}/bin/mvn' clean site -Dgroups=all"
