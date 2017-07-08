@@ -33,6 +33,13 @@ public class ReverseString {
 		return result = sb.reverse().toString();
 	}
 	
-	
+	public String reverseString02(String str) {
+		String result = "";
+		String original = str;
+		for (int i = original.length()-1; i >= 0; i--) {
+			result = result + original.charAt(i);
+		}
+		return result;
+	}
 
 }
