@@ -29,6 +29,10 @@ public class ReverseStringTest {
 		Assert.assertEquals(reverse, rs.reverseString01(original), "Reverse string doesn't match to expected");
 	}
 	
+	@Test(enabled = true, groups = {"reverse", "string", "regression", "all"}, priority = 0)
+	public void reverseString02Test() {
+		Assert.assertEquals(reverse, rs.reverseString02(original), "Reverse string doesn't match to expected");
+	}
 	
 	
 }
