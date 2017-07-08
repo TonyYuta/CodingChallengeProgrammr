@@ -23,7 +23,8 @@ public class ReverseStringTest {
 		
 	}
 		
-	@Test(enabled = true, groups = {"reverse", "string", "regression", "all"}, dependsOnGroups = {"palindrome"}, priority = 0)
+	//@Test(enabled = true, groups = {"reverse", "string", "regression", "all"}, dependsOnGroups = {"palindrome"}, priority = 0)
+	@Test(enabled = true, groups = {"reverse", "string", "regression", "all"}, priority = 0)
 	public void reverseString01Test() {
 		Assert.assertEquals(reverse, rs.reverseString01(original), "Reverse string doesn't match to expected");
 	}

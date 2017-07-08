@@ -34,12 +34,14 @@ public class PalindromeTest {
 		Assert.assertFalse(ips.isPalindromeString01(notPalindromeString), "Wrong result: String " + notPalindromeString + "considered as a palindrome");		
 	}
 	
-	@Test(enabled = true, groups = {"palindrome", "regression", "all"}, dependsOnGroups = {"string"}, priority = 1)
+	//@Test(enabled = true, groups = {"palindrome", "regression", "all"}, dependsOnGroups = {"string"}, priority = 1)
+	@Test(enabled = true, groups = {"palindrome", "regression", "all"}, priority = 1)
 	public void IsPalindromeString02TrueTest() {
 		Assert.assertTrue(ips.isPalindromeString02(palindromeString));
 	}
 	
-	@Test(enabled = true, groups = {"palindrome", "regression", "all"}, dependsOnGroups = {"string"} , priority = 1)
+	//@Test(enabled = true, groups = {"palindrome", "regression", "all"}, dependsOnGroups = {"string"} , priority = 1)
+	@Test(enabled = true, groups = {"palindrome", "regression", "all"}, priority = 1)
 	public void IsPalindromeString02FalseTest() {
 		Assert.assertFalse(ips.isPalindromeString02(notPalindromeString));
 	}
