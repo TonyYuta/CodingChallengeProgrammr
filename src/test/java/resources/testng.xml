@@ -4,6 +4,7 @@
   <test name="Test">
     <classes>
       <class name="org.programmr.coding.PalindromeTest"/>
+      <class name="org.programmr.coding.ReverseStringTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
