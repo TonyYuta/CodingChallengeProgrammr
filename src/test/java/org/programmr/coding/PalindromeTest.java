@@ -63,7 +63,7 @@ public class PalindromeTest {
 	
 	@Test(enabled = true, groups = {"palindrome", "stringbuffer", "regression", "all"}, dependsOnGroups = {"string"}, priority = 2)
 	public void IsPalindromeString04FalseTest() {
-		Assert.assertFalse(ips.isPalindromeString04(palindromeString), "Wrong result: String " + notPalindromeString + "considered as a palindrome");
+		Assert.assertFalse(ips.isPalindromeString04(notPalindromeString), "Wrong result: String " + notPalindromeString + "considered as a palindrome");
 	}
 	
 	
