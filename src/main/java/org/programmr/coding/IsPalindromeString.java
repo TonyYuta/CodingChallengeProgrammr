@@ -7,6 +7,8 @@
 
 package org.programmr.coding;
 
+import java.util.Scanner;
+
 public class IsPalindromeString {
 	
 	  public boolean isPalindromeString01(String str) {
@@ -45,7 +47,24 @@ public class IsPalindromeString {
 		  return result = original.equals(reverse.toString());
 	  }
 	  
-	  public boolean isPalindromeString04(String str) {
+	  public void isPalindromeString04() {
+		  String original;
+		  String result;
+		  System.out.println("Enter a string: ");
+		  Scanner scanner = new Scanner(System.in);
+		  original = scanner.nextLine();
+		  StringBuffer reverse = new StringBuffer();
+		  for (int i = original.length()-1; i >=0; i--) {
+			  reverse.append(original.charAt(i));
+		  }
+		  if (original.equals(reverse.toString())) {
+			  System.out.println("This is a palindrome.");
+		  } else {
+			  System.out.println("This is not a palindrome.");
+		  }
+	  }
+	  
+	  public boolean isPalindromeString05(String str) {
 		  String input = str;
 		 // Scanner scanner = new Scanner(System.in);
 		 // input = scanner.nextLine();
