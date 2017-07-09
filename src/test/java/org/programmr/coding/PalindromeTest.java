@@ -16,8 +16,8 @@ public class PalindromeTest {
 	@BeforeMethod(alwaysRun = true)
 	public void setUp() {
 		ips = new IsPalindromeString();
-		palindromeString = "abcdcba";		
-		notPalindromeString = "abcdefg";
+		palindromeString = "palindrome ccc emordnilap";		
+		notPalindromeString = "not a palindrome";
 	}
 	
 	@AfterMethod(alwaysRun = true)
