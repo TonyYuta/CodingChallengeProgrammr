@@ -62,7 +62,7 @@ public class IsPalindromeString {
 		  } else {
 			  System.out.println("This is not a palindrome.");
 		  }
-	  }
+	  }	  
 	  
 	  public boolean isPalindromeString05(String str) {
 		  String input = str;
