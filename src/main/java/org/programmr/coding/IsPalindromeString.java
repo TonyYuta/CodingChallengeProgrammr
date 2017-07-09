@@ -36,6 +36,16 @@ public class IsPalindromeString {
 	  }
 	  
 	  public boolean isPalindromeString03(String str) {
+		  String original = str;
+		  boolean result;
+		  StringBuffer reverse = new StringBuffer();
+		  for (int i = original.length()-1; i >=0; i--) {
+			  reverse.append(original.charAt(i));
+		  }
+		  return result = original.equals(reverse.toString());
+	  }
+	  
+	  public boolean isPalindromeString04(String str) {
 		  String input = str;
 		 // Scanner scanner = new Scanner(System.in);
 		 // input = scanner.nextLine();
