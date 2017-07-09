@@ -35,25 +35,35 @@ public class PalindromeTest {
 	}
 	
 	//@Test(enabled = true, groups = {"palindrome", "regression", "all"}, dependsOnGroups = {"string"}, priority = 1)
-	@Test(enabled = true, groups = {"palindrome", "stringbuffer", "regression", "all"}, priority = 1)
+	@Test(enabled = true, groups = {"palindrome", "string", "regression", "all"}, priority = 1)
 	public void IsPalindromeString02TrueTest() {
 		Assert.assertTrue(ips.isPalindromeString02(palindromeString));
 	}
 	
 	//@Test(enabled = true, groups = {"palindrome", "regression", "all"}, dependsOnGroups = {"string"} , priority = 1)
-	@Test(enabled = true, groups = {"palindrome", "stringbuffer", "regression", "all"}, priority = 1)
+	@Test(enabled = true, groups = {"palindrome", "string", "regression", "all"}, priority = 1)
 	public void IsPalindromeString02FalseTest() {
 		Assert.assertFalse(ips.isPalindromeString02(notPalindromeString));
 	}
 	
-	@Test(enabled = true, groups = {"palindrome", "stringbuffer", "regression", "all"}, dependsOnGroups = {"stringbuffer"}, priority = 2)
+	@Test(enabled = true, groups = {"palindrome", "stringbuffer", "regression", "all"}, dependsOnGroups = {"string"}, priority = 2)
 	public void IsPalindromeString03TrueTest() {
 		Assert.assertTrue(ips.isPalindromeString03(palindromeString), "Wrong result: String " + palindromeString + "considered as not a palindrome");		
 	}
 	
-	@Test(enabled = true, groups = {"palindrome", "regression", "all"}, priority = 2)
+	@Test(enabled = true, groups = {"palindrome", "stringbuffer", "regression", "all"}, dependsOnGroups = {"string"}, priority = 2)
 	public void IsPalindromeString03FalseTest() {
 		Assert.assertFalse(ips.isPalindromeString03(notPalindromeString),  "Wrong result: String " + notPalindromeString + "considered as a palindrome");		
+	}
+	
+	@Test(enabled = true, groups = {"palindrome", "stringbuffer", "regression", "all"}, dependsOnGroups = {"string"}, priority = 2)
+	public void IsPalindromeString04TrueTest() {
+		Assert.assertTrue(ips.isPalindromeString04(palindromeString), "Wrong result: String " + palindromeString + "considered as not a palindrome");	
+	}
+	
+	@Test(enabled = true, groups = {"palindrome", "stringbuffer", "regression", "all"}, dependsOnGroups = {"string"}, priority = 2)
+	public void IsPalindromeString04FalseTest() {
+		Assert.assertFalse(ips.isPalindromeString04(palindromeString), "Wrong result: String " + notPalindromeString + "considered as a palindrome");
 	}
 	
 	

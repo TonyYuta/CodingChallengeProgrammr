@@ -27,44 +27,6 @@ public class IsPalindromeString {
 	  }
 	  
 	  public boolean isPalindromeString02(String str) {
-		  String original = str;
-		  boolean result;
-		//  Scanner in = new Scanner(System.in);
-		//  System.out.println("Enter a string to check if it is a palindrome");
-		//  original = in.nextLine();
-		  StringBuffer reverse = new StringBuffer(original).reverse();
-		  
-		  return result = original.equals(reverse.toString());
-	  }
-	  
-	  public boolean isPalindromeString03(String str) {
-		  String original = str;
-		  boolean result;
-		  StringBuffer reverse = new StringBuffer();
-		  for (int i = original.length()-1; i >=0; i--) {
-			  reverse.append(original.charAt(i));
-		  }
-		  return result = original.equals(reverse.toString());
-	  }
-	  
-	  public void isPalindromeString04() {
-		  String original;
-		  String result;
-		  System.out.println("Enter a string: ");
-		  Scanner scanner = new Scanner(System.in);
-		  original = scanner.nextLine();
-		  StringBuffer reverse = new StringBuffer();
-		  for (int i = original.length()-1; i >=0; i--) {
-			  reverse.append(original.charAt(i));
-		  }
-		  if (original.equals(reverse.toString())) {
-			  System.out.println("This is a palindrome.");
-		  } else {
-			  System.out.println("This is not a palindrome.");
-		  }
-	  }	  
-	  
-	  public boolean isPalindromeString05(String str) {
 		  String input = str;
 		 // Scanner scanner = new Scanner(System.in);
 		 // input = scanner.nextLine();
@@ -86,5 +48,45 @@ public class IsPalindromeString {
 		  
 		  return (i == middle + 1);
 	  }
+	  
+	  public boolean isPalindromeString03(String str) {
+		  String original = str;
+		  boolean result;
+		//  Scanner in = new Scanner(System.in);
+		//  System.out.println("Enter a string to check if it is a palindrome");
+		//  original = in.nextLine();
+		  StringBuffer reverse = new StringBuffer(original).reverse();
+		  
+		  return result = original.equals(reverse.toString());
+	  }
+	  
+	  public boolean isPalindromeString04(String str) {
+		  String original = str;
+		  boolean result;
+		  StringBuffer reverse = new StringBuffer();
+		  for (int i = original.length()-1; i >=0; i--) {
+			  reverse.append(original.charAt(i));
+		  }
+		  return result = original.equals(reverse.toString());
+	  }
+	  
+	  public void isPalindromeString05() {
+		  String original;
+		  String result;
+		  System.out.println("Enter a string: ");
+		  Scanner scanner = new Scanner(System.in);
+		  original = scanner.nextLine();
+		  StringBuffer reverse = new StringBuffer();
+		  for (int i = original.length()-1; i >=0; i--) {
+			  reverse.append(original.charAt(i));
+		  }
+		  if (original.equals(reverse.toString())) {
+			  System.out.println("This is a palindrome.");
+		  } else {
+			  System.out.println("This is not a palindrome.");
+		  }
+	  }	  
+	  
+
 	  
 }
